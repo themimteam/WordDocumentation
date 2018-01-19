@@ -14,7 +14,6 @@ The scripts on this folder are used to produce two Word documents from exported 
 BEFORE RUNNING THIS SCRIPT:
 
 * Export the schema and policy using the standard configuration migration scripts http://technet.microsoft.com/en-us/library/ff400275(v=ws.10).aspx
-
 ** Note if you want to include Groups or custom object types in the document you must modify the ExportPolicy.ps1 script, 
 ** Eg, $policy = Export-FIMConfig -policyConfig -portalConfig -customConfig ("/Group", "/Role") -MessageSize 9999999
 ** You must also modify the $ReportObjects hashtable in the Include_CustomisedContent.ps1 script.
