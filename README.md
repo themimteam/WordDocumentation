@@ -14,11 +14,11 @@ The scripts on this folder are used to produce two Word documents from exported 
 BEFORE RUNNING THIS SCRIPT:
 
 * Export the schema and policy using the standard configuration migration scripts http://technet.microsoft.com/en-us/library/ff400275(v=ws.10).aspx
-** Note if you want to include Groups or custom object types in the document you must modify the ExportPolicy.ps1 script, 
-** Eg, $policy = Export-FIMConfig -policyConfig -portalConfig -customConfig ("/Group", "/Role") -MessageSize 9999999
-** You must also modify the $ReportObjects hashtable in the Include_CustomisedContent.ps1 script.
+  * Note if you want to include Groups or custom object types in the document you must modify the ExportPolicy.ps1 script, 
+  * Eg, $policy = Export-FIMConfig -policyConfig -portalConfig -customConfig ("/Group", "/Role") -MessageSize 9999999
+  * You must also modify the $ReportObjects hashtable in the Include_CustomisedContent.ps1 script.
 * Export the Sync Server config using the option in the UI.
-** Note: if you use Sync Rules see the comment in the Document_SynConfig script about producing a CSV that links Sync Rule name to Metaverse ObjectID.
+  * Note: if you use Sync Rules see the comment in the Document_SynConfig script about producing a CSV that links Sync Rule name to Metaverse ObjectID.
 * Modify the Include_STYLES.ps1 script to specify a different Word template and/or styles.
 * Modify the Include_CustomisedContent.ps1 script to change document wording, which objects and parameters are included, and any custom object types.
 * Run the scripts specifying the full paths to the exported config.
